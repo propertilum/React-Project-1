@@ -1,6 +1,8 @@
 import './index.css';
 import Navbar from './components/navbar';
+import Hero from './components/hero';
 import Card from './components/card';
+import Features from './components/features';
 import Footer from './components/footer';
 
 function App() {
@@ -28,6 +30,7 @@ function App() {
   return (
     <div className="page-layout">
       <Navbar />
+      <Hero />
 
       <main className="container">
         {cardsData.map((card) => (
@@ -40,9 +43,10 @@ function App() {
         ))}
       </main>
 
+      <Features />
       <Footer />
     </div>
   );
 }
 
-export default App
+export default App;
